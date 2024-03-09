@@ -1,0 +1,13 @@
+package in.vs.beans;
+
+public class Student {
+
+	
+
+	public void msg() {
+		System.out.println("Ha bhai chal gya");
+		
+	}
+	
+
+}

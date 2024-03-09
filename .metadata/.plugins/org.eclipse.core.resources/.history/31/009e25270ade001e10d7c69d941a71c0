@@ -1,0 +1,22 @@
+package in.vs.main;
+
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import in.vs.beans.Printable;
+import in.vs.beans.Student;
+
+public class Main {
+	public static void main(String[] arg)
+	{
+		//use Java config file
+		ApplicationContext context = new ClassPathXmlApplicationContext("/in/vs/resources/applicationContext.xml");
+		
+		Printable st=(Printable) context.getBean("stdId");
+		st.msg();
+		
+		
+	}
+}
+

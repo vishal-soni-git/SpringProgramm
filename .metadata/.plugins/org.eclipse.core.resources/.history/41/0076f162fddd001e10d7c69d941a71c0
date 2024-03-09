@@ -1,0 +1,8 @@
+package in.vs.beans;
+
+public class Address {
+	
+	private String houseNo;
+	private String city;
+
+}

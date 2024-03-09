@@ -1,0 +1,25 @@
+package in.vs.beans;
+
+public class Student {
+
+	private String name;
+	private int rollNo;
+	private String email;
+	
+	
+	public Student(String name, int rollNo, String email) {
+		super();
+		this.name = name;
+		this.rollNo = rollNo;
+		this.email = email;
+	}
+
+
+	public void display() {
+		System.out.println("Name : "+name);
+		System.out.println("rollNo : "+rollNo);
+		System.out.println("email : "+email);
+	}
+	
+
+}

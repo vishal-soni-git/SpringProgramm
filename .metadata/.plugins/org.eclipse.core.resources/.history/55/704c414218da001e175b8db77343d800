@@ -1,0 +1,21 @@
+package in.vs.logger;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class LoggerDemo {
+	public static void main(String[] arg)
+	{
+		Logger logger=Logger.getAnonymousLogger();
+		int sum;
+		try {
+			
+			sum=10/0;
+			logger.log(Level.INFO,"greet");
+		} catch (Exception e) {
+			//System.err.println("Some gadbad by  "+e);
+			
+		}
+	}	
+
+}

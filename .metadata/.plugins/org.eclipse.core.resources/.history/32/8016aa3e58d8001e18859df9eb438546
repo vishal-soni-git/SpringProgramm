@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+     <bean class="in.vs.beans.Student" id="stdId" autowire="byName">
+     <property name="name" value="Vishal Soni"></property>
+     <property name="rollNo" value="058"></property>
+     </bean>
+      <bean class="in.vs.beans.Address" id="address" autowire-candidate="false">
+     <property name="houseNo" value="22/7"></property>
+     <property name="city" value="Agra"></property>
+     <property name="pincode" value="282007"></property>
+     </bean>
+     <bean class="in.vs.beans.Address" id="address">
+     <property name="houseNo" value="22/7"></property>
+     <property name="city" value="Agra"></property>
+     <property name="pincode" value="282007"></property>
+     </bean>
+</beans>

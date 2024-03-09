@@ -1,0 +1,13 @@
+package in.vs.beans;
+
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+public class AOPClass {
+	
+	
+	public void runBefore() {
+		System.out.println("Transaction Started....");
+	}
+
+}

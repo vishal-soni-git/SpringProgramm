@@ -1,0 +1,22 @@
+package in.vs.resources;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import in.vs.beans.Address;
+import in.vs.beans.Student;
+
+@Configuration
+public class SpringConfig {
+	
+	@Bean
+	public Student stdId()
+	{
+		Student std=new Student();
+		std.setName("Madhav");
+		std.setRollNo(21);
+		//std.setAddress(addId());
+		return std;
+	}
+    
+}

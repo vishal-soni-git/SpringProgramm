@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <bean class="in.vs.beans.Student" id="stdId" scope="singleton">
+  <property name="name" value="Vishal"/>
+  <property name="rollNo" value="58"/>
+  <property name="email" value="vso@gmail.com"/>
+  <property name="" ref="addId"/>
+  <constructor-arg  type='int'/>
+  <constructor-arg />
+  <constructor-arg />
+  </bean>
+  <bean class="in.vs.beans.Address" id="addId" scope="singleton">
+  <constructor-arg value="h-21"/>
+  <constructor-arg value="Agra" />
+  <constructor-arg value="282007" type='int'/>
+  </bean>
+
+</beans>

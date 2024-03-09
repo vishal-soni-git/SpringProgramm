@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1708235279618_0" label="Java Main Sources" name="Java Main Sources"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1708235279631_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1709549474232_3" label="a" name="a">
+<item elementID="=checkUnicodeOfHindi" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=SpringConfigurationUsingJavaFile" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=AOPProgram1" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1708235281820_2" label="Window Working Set" name="Aggregate for window 1708235281820"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1709549752855_4" label="Window Working Set" name="Aggregate for window 1709549752855"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1709549799094_5" label="Window Working Set" name="Aggregate for window 1709549799094"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1709876924766_6" label="Window Working Set" name="Aggregate for window 1709876924766"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1709876994507_7" label="Window Working Set" name="Aggregate for window 1709876994507"/>
+<mruList name="a"/>
+</workingSetManager>

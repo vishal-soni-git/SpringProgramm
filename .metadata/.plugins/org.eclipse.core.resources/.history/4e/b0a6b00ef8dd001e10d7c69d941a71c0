@@ -1,0 +1,10 @@
+package in.vs.resources;
+
+import org.springframework.context.annotation.ComponentScan;
+
+import in.vs.beans.Student;
+
+@ComponentScan("in.vs.beans")
+public class SpringConfigFile {
+
+}

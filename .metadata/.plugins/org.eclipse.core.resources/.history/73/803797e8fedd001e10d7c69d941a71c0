@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <bean class="in.vs.beans.Student" id="stdId" scope="singleton">
+  <constructor-arg value="Vishal"/>
+  <constructor-arg>
+    <list>
+    <value>9193572517</value>
+    <value>9193572518</value>
+    </list>
+  </constructor-arg>
+  
+  <constructor-arg>
+  <map>
+  <entry key="java" value=" 2 Month"/>
+  <entry key="Spring" value=" 2 Month"/>
+  </map>
+  </constructor-arg>
+   
+  <constructor-arg>
+  <set>
+  <ref bean="addId1"/>
+  <ref bean="addId2"/>
+  </set>
+  </constructor-arg>
+  </bean>
+  
+  
+  <bean class="in.vs.beans.Address" id="addId" scope="singleton">
+  <constructor-arg value="h-21"/>
+  <constructor-arg value="Agra" />
+  <constructor-arg value="282007" type='int'/>
+  </bean>
+
+</beans>

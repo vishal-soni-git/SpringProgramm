@@ -1,0 +1,55 @@
+package in.vs.logger;
+
+import java.util.Currency;
+import java.util.Locale;
+import java.util.ResourceBundle;
+import java.util.logging.*;
+
+public class ResourceBundleExample {
+
+    //private static final Logger logger = Logger.getLogger(ResourceBundleExample.class.getName());
+	
+
+    public static void main(String[] args) {
+    	
+    /*	Locale local=new Locale("hi","IN");
+    	System.out.println("local country  "+local.getCountry());
+    	System.out.println("local country name "+local.getDisplayCountry());
+    	System.out.println("local language "+local.getDisplayLanguage());
+    	System.out.println("local getDisplayName "+local.getDisplayName());
+    	System.out.println("local "+local.toLanguageTag());
+    	
+    	Currency cur=Currency.getInstance(local);
+    	System.out.println("currency "+cur.getCurrencyCode());
+    	System.out.println("currency "+cur.getDisplayName());
+    	System.out.println("currency "+cur.getSymbol());*/
+    	
+    	 // Set the default locale to English (India)
+        Locale.setDefault(new Locale("en", "US"));
+      //  Locale.setDefault(new Locale("hi", "IN"));
+    	//Locale locale=new Locale("en","US");
+
+        // Load the resource bundle
+        //ResourceBundle resourceBundle = ResourceBundle.getBundle("myMessages");
+
+        // Create an anonymous logger with the loaded resource bundle
+        Logger logger = Logger.getAnonymousLogger("myMessages");
+        //logger.setResourceBundle(resourceBundle);
+        
+        logger.log(Level.INFO,"message");
+
+        // Log a message with a key that can be looked up in the resource bundle
+        logger.log(Level.INFO, "example.message.key");
+        
+        
+     // Create an anonymous logger with the loaded resource bundle
+        Logger logger1 = Logger.getAnonymousLogger("message");
+        //logger.setResourceBundle(resourceBundle);
+        
+        logger1.log(Level.INFO,"hello");
+
+      
+
+  
+    }
+}

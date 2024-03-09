@@ -1,0 +1,18 @@
+package in.vs.beans;
+
+public class A implements Printable {
+	
+	private static final A obj=new A();  
+	private A(){System.out.println("private constructor");}  
+	public static A getA(){  
+	    System.out.println("factory method ");  
+	    return obj;  
+	}  
+	@Override
+	public void prin() {
+		// TODO Auto-generated method stub
+		System.out.println("Succesfully implement factory method");  
+		
+	}  
+
+}

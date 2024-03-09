@@ -1,0 +1,28 @@
+package in.vs.logger;
+
+import java.util.Locale;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class LoggerDemo {
+	public static void main(String[] arg)
+	{
+		Logger logger=Logger.getAnonymousLogger();
+		Locale.setDefault(new Locale("hi","IN"));
+		Logger logger1=Logger.getAnonymousLogger("message");
+		
+		logger.log(Level.INFO,"hello");
+		logger.log(Level.INFO,"mesage");
+		int sum;
+		try {
+			
+			sum=10/0;
+		} catch (Exception e) {
+			//System.err.println("Some gadbad by  "+e);
+			logger.log(Level.WARNING,"error",e);
+			logger1.log(Level.WARNING,"message",e);
+		}
+
+	}	
+
+}

@@ -1,0 +1,18 @@
+package in.vs.logger;
+
+public class LoggerDemo {
+	
+	public static void main(String[] arg)
+	{
+		int sum;
+		try {
+			
+			sum=10/0;
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			
+		}
+	}	
+
+}

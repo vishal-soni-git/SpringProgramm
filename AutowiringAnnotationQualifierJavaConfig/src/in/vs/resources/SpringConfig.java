@@ -1,0 +1,41 @@
+package in.vs.resources;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import in.vs.beans.Address;
+import in.vs.beans.Student;
+
+@Configuration
+public class SpringConfig {
+	
+	@Bean
+	public Student stdId()
+	{
+		Student std=new Student();
+		std.setName("Vishal Soni");
+		std.setRollNo(58);
+		return std;
+	}
+
+	@Bean
+	public Address addId1() {
+		// TODO Auto-generated method stub
+		Address add=new Address();
+		add.setHouseNo("h-21");
+		add.setCity("Agra");
+		add.setPincode(282007);
+		return add;
+	}
+	
+	@Bean
+	public Address addId2() {
+		// TODO Auto-generated method stub
+		Address add=new Address();
+		add.setHouseNo("h-21");
+		add.setCity("Mathura");
+		add.setPincode(18181);
+		return add;
+	}
+
+}

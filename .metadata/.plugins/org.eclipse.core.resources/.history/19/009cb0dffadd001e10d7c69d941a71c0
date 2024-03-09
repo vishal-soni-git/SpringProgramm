@@ -1,0 +1,23 @@
+package in.vs.main;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import in.vs.beans.Student;
+
+public class Main {
+	public static void main(String[] arg)
+	{
+		//use xml file
+		AbstractApplicationContext context = new ClassPathXmlApplicationContext("/in/vs/resources/applicationContext.xml");
+		
+		//for enable destroy method we apply hook
+		context.registerShutdownHook();
+		System.out.println("-------------------------------------------");
+		Student st=context.getBean(Student.class);
+		st.display();
+		System.out.println("-------------------------------------------");
+		
+	}
+}
+

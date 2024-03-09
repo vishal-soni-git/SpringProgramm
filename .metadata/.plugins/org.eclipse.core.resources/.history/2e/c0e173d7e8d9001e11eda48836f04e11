@@ -1,0 +1,17 @@
+package in.vs.beans;
+
+public class PaymentImpl implements Payment,Runnable {
+
+	public void makePayment(int ammount) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(ammount+" have been deducted");
+		
+		//your logic
+		
+		System.out.println(ammount+" have been created");
+		
+	}
+	
+
+}

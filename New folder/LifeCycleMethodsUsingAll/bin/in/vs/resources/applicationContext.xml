@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- bean definitions here -->
+    <!-- this is for xml bean method -->
+   <bean class="in.vs.beans.Student" id="stdId" scope='singleton' init-method='init' destroy-method='destroy'>
+     <property name="name" value="Vishal Soni"></property>
+     <property name="rollNo" value="058"></property>
+     <property name="email" value="vso55089@gmail.com"></property>
+     </bean>
+     
+     <!-- this is for java bean method of interfaces method -->
+      <bean class="in.vs.beans.Teacher" id="tId" scope='singleton' >
+     <property name="name" value="Krishna"></property>
+     <property name="id" value="21"></property>
+     <property name="email" value="Kanha@gmail.com"></property>
+     </bean>
+  
+     <!-- this is using annotation method -->
+     
+     <!-- if want to enable all annotation then use annotation-config -->
+     <!-- <context:annotation-config/> -->
+     
+      <!-- if want to enable only postConstruct and predestroy then use -->
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+    
+      <bean class="in.vs.beans.School" id="sId" scope='singleton' >
+     <property name="name" value="Kurukshetra Public Schoool"></property>
+     <property name="scid" value="0562"></property>
+     <property name="email" value="Dharmyudhha@gmail.com"></property>
+     </bean>
+     
+</beans>

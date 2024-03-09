@@ -1,0 +1,22 @@
+package in.vs.beans;
+
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+
+@Aspect
+public class AOPClass {
+	
+	@Before("execution(* in.vs.beans.PaymentImpl.makePayment(..))")
+	public void runBefore() throws Exception {
+		System.out.println("Transaction Started....");
+		Thread t=new Thread();
+		t.sleep(3000);
+	}
+	
+	@After("execution(* in.vs.beans.Payment.makePayment(..))")
+	public void runAfter() {
+		System.out.println("Transaction Successfull....");
+	}
+
+}

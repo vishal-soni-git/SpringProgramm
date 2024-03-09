@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <bean class="in.vs.beans.Student" id="stdId" scope="singleton" init-method="init" destroy-method="destroy">
+  <property name="name" value="Vishal"/>
+  <property name="rollNo" value="58"/>
+  <property name="email" value="vso@gmail.com"/>
+  </bean>
+  
+  <bean class="in.vs.beans.Teacher" id="tId" scope="singleton" >
+  <property name="name" value="Krishna"/>
+  <property name="id" value="21"/>
+  <property name="email" value="kanha@gmail.com"/>
+  </bean>
+  
+  
+  <!-- this is for annotation if we not enable method working will not show-->
+  <!-- if want to enable all annotation then use -->
+  <context:annotation-config/>
+  <bean class="in.vs.beans.School" id="scId" scope="singleton" >
+  <property name="name" value="Kurukshetra Public School"/>
+  <property name="scid" value="0562"/>
+  <property name="email" value="Dharmayudhha@gmail.com"/>
+  </bean>
+
+</beans>

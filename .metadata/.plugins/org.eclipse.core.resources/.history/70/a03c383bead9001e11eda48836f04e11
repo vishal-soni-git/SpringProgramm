@@ -1,0 +1,22 @@
+package in.vs.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import in.vs.beans.PaymentImpl;
+
+public class Main {
+
+	public static void main(String[] arg) throws InterruptedException
+	{
+		ApplicationContext context = new ClassPathXmlApplicationContext("/in/vs/resources/applicationContext.xml");
+		
+		PaymentImpl p=context.getBean("payment",PaymentImpl.class);
+		
+		Thread t=new Thread(p);
+		
+		t.sleep(10000);
+		t.start();	
+	}
+}
+

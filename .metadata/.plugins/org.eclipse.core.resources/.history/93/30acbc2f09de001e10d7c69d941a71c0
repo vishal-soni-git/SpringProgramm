@@ -1,0 +1,18 @@
+package in.vs.beans;
+
+public class Student {
+
+	private static final Student obj=null;
+	
+	private Student() {
+		
+		System.out.println("private constructor");
+	}
+
+	public void msg() {
+		System.out.println("Ha bhai chal gya");
+		
+	}
+	
+
+}

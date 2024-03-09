@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+    <fullyQualifiedTypeName name="in.vs.resources.ConfigFile"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.InitializingBean"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.DisposableBean"/>
+    <fullyQualifiedTypeName name="in.vs.beans.Teacher"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.ScannedGenericBeanDefinition"/>
+    <fullyQualifiedTypeName name="in.vs.beans.School"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="in.vs.beans.A"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="in.vs.beans.Printable"/>
+    <fullyQualifiedTypeName name="in.vs.beans.PrintableFactory"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.EnableAspectJAutoProxy"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
+    <fullyQualifiedTypeName name="in.vs.beans.PaymentImpl"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.After"/>
+    <fullyQualifiedTypeName name="org.springframework.aop.framework.AopProxyUtils"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="in.vs.beans.Payment"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="in.vs.beans.Student"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+    <fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
+    <fullyQualifiedTypeName name="in.vs.resources.SpringConfigFile"/>
+    <fullyQualifiedTypeName name="in.vs.logger.LoggerDemo"/>
+    <fullyQualifiedTypeName name="java.util.logging.Level"/>
+    <fullyQualifiedTypeName name="java.util.ResourceBundle"/>
+    <fullyQualifiedTypeName name="java.util.Currency"/>
+    <fullyQualifiedTypeName name="java.util.logging.Logger"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+</qualifiedTypeNameHistroy>
